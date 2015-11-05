@@ -44,15 +44,21 @@ int main()
       )
     {
       k++;
-      // i--;
-      // continue;
+      i--;
+      continue;
     }
 
     if (c.expo == 0)
-      c.frac = 0;
+    {
+      i--;
+      continue;
+    }
 
-    if (c.expo == (1<<8) - 1)
-      c.frac = 0;
+    // if (c.expo == 0)
+    //   c.frac = 0;
+
+    // if (c.expo == (1<<8) - 1)
+    //   c.frac = 0;
 
     fprintf(in,  "%s\n", dec2bin(a.ui, 32, str1));
     fprintf(in,  "%s\n", dec2bin(b.ui, 32, str1));

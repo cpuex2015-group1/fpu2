@@ -172,4 +172,4 @@ begin
     end if;
   end process;
 
-end fpu1;
+end fpu2;
